@@ -43,6 +43,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="artistLabel" destination="BmJ-HI-BdU" id="gj1-Du-ZQ1"/>
+                                    <outlet property="artwork" destination="3hF-bK-bUE" id="8xL-wM-M2A"/>
+                                    <outlet property="trackLabel" destination="Stu-QI-Y9K" id="QXu-3y-UjO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

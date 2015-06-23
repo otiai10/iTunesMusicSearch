@@ -123,5 +123,8 @@ class ListViewController: UITableViewController {
 }
 
 class ListCell: UITableViewCell {
+    @IBOutlet weak var artwork: UIImageView!
+    @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var trackLabel: UILabel!
     
 }
