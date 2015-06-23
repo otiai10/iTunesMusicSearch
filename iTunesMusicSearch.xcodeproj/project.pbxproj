@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2A195B797CFEAD2BBE0AB69F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F337C0DFC01A7272F84DD8D /* libPods.a */; };
-		7C1D1F6F1B39732B008D3C39 /* hoge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1D1F6E1B39732B008D3C39 /* hoge.m */; };
 		7CB3FEAD1B396FAE00268AE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3FEAC1B396FAE00268AE7 /* AppDelegate.swift */; };
 		7CB3FEAF1B396FAE00268AE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3FEAE1B396FAE00268AE7 /* ViewController.swift */; };
 		7CB3FEB21B396FAE00268AE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB3FEB01B396FAE00268AE7 /* Main.storyboard */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		0F337C0DFC01A7272F84DD8D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1D1F6D1B39732B008D3C39 /* iTunesMusicSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTunesMusicSearch-Bridging-Header.h"; sourceTree = "<group>"; };
-		7C1D1F6E1B39732B008D3C39 /* hoge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hoge.m; sourceTree = "<group>"; };
 		7CB3FEA71B396FAE00268AE7 /* iTunesMusicSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesMusicSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB3FEAB1B396FAE00268AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB3FEAC1B396FAE00268AE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				7CB3FEB31B396FAE00268AE7 /* Images.xcassets */,
 				7CB3FEB51B396FAE00268AE7 /* LaunchScreen.xib */,
 				7CB3FEAA1B396FAE00268AE7 /* Supporting Files */,
-				7C1D1F6E1B39732B008D3C39 /* hoge.m */,
 				7C1D1F6D1B39732B008D3C39 /* iTunesMusicSearch-Bridging-Header.h */,
 			);
 			path = iTunesMusicSearch;
@@ -281,7 +278,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB3FEAF1B396FAE00268AE7 /* ViewController.swift in Sources */,
-				7C1D1F6F1B39732B008D3C39 /* hoge.m in Sources */,
 				7CB3FEAD1B396FAE00268AE7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
