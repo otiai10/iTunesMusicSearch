@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A195B797CFEAD2BBE0AB69F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F337C0DFC01A7272F84DD8D /* libPods.a */; };
 		7CB3FEAD1B396FAE00268AE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3FEAC1B396FAE00268AE7 /* AppDelegate.swift */; };
 		7CB3FEAF1B396FAE00268AE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB3FEAE1B396FAE00268AE7 /* ViewController.swift */; };
 		7CB3FEB21B396FAE00268AE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB3FEB01B396FAE00268AE7 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F337C0DFC01A7272F84DD8D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB3FEA71B396FAE00268AE7 /* iTunesMusicSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesMusicSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB3FEAB1B396FAE00268AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB3FEAC1B396FAE00268AE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		7CB3FEC11B396FAE00268AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB3FEC21B396FAE00268AE7 /* iTunesMusicSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesMusicSearchTests.swift; sourceTree = "<group>"; };
 		7CB3FECC1B3970FA00268AE7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		BE69FFA820A9FCF363DCA206 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F88AC76494A12F176C2B66AB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A195B797CFEAD2BBE0AB69F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,8 @@
 				7CB3FEA91B396FAE00268AE7 /* iTunesMusicSearch */,
 				7CB3FEBF1B396FAE00268AE7 /* iTunesMusicSearchTests */,
 				7CB3FEA81B396FAE00268AE7 /* Products */,
+				D560DC789820D82AF2EE3DF2 /* Pods */,
+				BC1074B36D885D0E2A7087A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +122,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BC1074B36D885D0E2A7087A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F337C0DFC01A7272F84DD8D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D560DC789820D82AF2EE3DF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE69FFA820A9FCF363DCA206 /* Pods.debug.xcconfig */,
+				F88AC76494A12F176C2B66AB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CB3FEC61B396FAE00268AE7 /* Build configuration list for PBXNativeTarget "iTunesMusicSearch" */;
 			buildPhases = (
+				D26F97CA3413696AE202F02F /* Check Pods Manifest.lock */,
 				7CB3FEA31B396FAE00268AE7 /* Sources */,
 				7CB3FEA41B396FAE00268AE7 /* Frameworks */,
 				7CB3FEA51B396FAE00268AE7 /* Resources */,
+				6C8018441AE9FB217F82BAFF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +236,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C8018441AE9FB217F82BAFF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D26F97CA3413696AE202F02F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CB3FEA31B396FAE00268AE7 /* Sources */ = {
@@ -342,6 +401,7 @@
 		};
 		7CB3FEC71B396FAE00268AE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE69FFA820A9FCF363DCA206 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iTunesMusicSearch/Info.plist;
@@ -352,6 +412,7 @@
 		};
 		7CB3FEC81B396FAE00268AE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88AC76494A12F176C2B66AB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iTunesMusicSearch/Info.plist;
@@ -413,6 +474,7 @@
 				7CB3FEC81B396FAE00268AE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CB3FEC91B396FAE00268AE7 /* Build configuration list for PBXNativeTarget "iTunesMusicSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +483,7 @@
 				7CB3FECB1B396FAE00268AE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
