@@ -13,6 +13,27 @@ class ListViewController: UITableViewController {
     private var results: [NSDictionary]?
 
     @IBOutlet weak var mySearchBar: UISearchBar!
+    
+    // サーチバーをおしたときの挙動
+    // searchBarのSearchボタンをタップしたときの処理
+    func searchBarSearchButtonClicked(mySearchBar: UISearchBar) {
+        mySearchBar.resignFirstResponder() // キーボードを閉じる
+        
+        // url encode　例. スピッツ > %83X%83s%83b%83c
+        let text = mySearchBar.text.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+        if let text = text {
+            AFHTTPSessionManager().GET(
+                "https://itunes.apple.com/search?term=\(text)&country=JP&lang=ja_jp&media=music",
+                parameters: nil,
+                success: { (task: NSURLSessionDataTask!, response: AnyObject!) -> Void in
+                    if let data = response as? NSDictionary, results = data["results"] as? [NSDictionary] {
+                        self.results = results
+                        self.tableView.reloadData() // 再描画
+                    }
+                },
+                failure: nil)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
