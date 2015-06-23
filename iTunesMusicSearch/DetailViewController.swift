@@ -14,4 +14,15 @@ class DetailViewController: AVPlayerViewController {
    
     var trackName: String!
     var previewUrl: String?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = trackName // title設定
+        
+        if let previewUrl = previewUrl {
+            player = AVPlayer(URL: NSURL(string: previewUrl))
+            player.play() // 自動再生
+        }
+    }
 }
