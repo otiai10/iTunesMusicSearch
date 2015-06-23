@@ -64,15 +64,16 @@ class ListViewController: UITableViewController {
         return results?.count ?? 0
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("mycell", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
+        if let result = results?[indexPath.row] {
+            cell.textLabel?.text = result["trackName"] as? String
+        }
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
