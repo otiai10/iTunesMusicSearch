@@ -121,3 +121,7 @@ class ListViewController: UITableViewController {
     */
 
 }
+
+class ListCell: UITableViewCell {
+    
+}
