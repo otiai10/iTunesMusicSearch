@@ -69,7 +69,7 @@ class ListViewController: UITableViewController {
 
         // Configure the cell...
         if let result = results?[indexPath.row] {
-            cell.textLabel?.text = result["trackName"] as? String
+            // cell.textLabel?.text = result["trackName"] as? String
             if let artworkUrl = result["artworkUrl100"] as? String {
                 cell.artwork.setImageWithURL(NSURL(string: artworkUrl))
             } else {
