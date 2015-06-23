@@ -68,7 +68,7 @@
         <!--AV Player View Controller-->
         <scene sceneID="7F2-fw-ll1">
             <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="UpC-PF-ODC" sceneMemberID="viewController"/>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="UpC-PF-ODC" customClass="DetailViewController" customModule="iTunesMusicSearch" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ev-30-Nhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="969" y="214"/>
