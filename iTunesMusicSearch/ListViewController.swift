@@ -65,11 +65,18 @@ class ListViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("mycell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("mycell", forIndexPath: indexPath) as! ListCell
 
         // Configure the cell...
         if let result = results?[indexPath.row] {
             cell.textLabel?.text = result["trackName"] as? String
+            if let artworkUrl = result["artworkUrl100"] as? String {
+                cell.artwork.setImageWithURL(NSURL(string: artworkUrl))
+            } else {
+                cell.artwork.image = nil
+            }
+            cell.trackLabel.text = result["trackName"] as? String
+            cell.artistLabel.text = result["artistName"] as? String
         }
 
         return cell
