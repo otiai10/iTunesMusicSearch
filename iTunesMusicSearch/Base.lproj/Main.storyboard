@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="lwL-7d-b7a">
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" id="lwL-7d-b7a">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -31,6 +31,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="Afg-89-6Od"/>
+                    <connections>
+                        <outlet property="mySearchBar" destination="lwL-7d-b7a" id="ANA-cm-mEv"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zg8-GA-idl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

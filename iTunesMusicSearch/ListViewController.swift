@@ -10,6 +10,8 @@ import UIKit
 
 class ListViewController: UITableViewController {
 
+    @IBOutlet weak var mySearchBar: UISearchBar!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
