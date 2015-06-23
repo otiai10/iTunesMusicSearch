@@ -9,6 +9,8 @@
 import UIKit
 
 class ListViewController: UITableViewController {
+    
+    private var results: [NSDictionary]?
 
     @IBOutlet weak var mySearchBar: UISearchBar!
 
